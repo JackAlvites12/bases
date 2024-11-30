@@ -1,0 +1,20 @@
+<div class="">
+
+    <h3>Listado:</h3>
+    <span *ngIf="charactersList.length===0">No hay elementos</span>
+    <ul>
+        <li *ngFor="
+            let character of charactersList;
+            let isFirst = first;
+            let isLast = last;
+            ">
+            <span>Id: {{ character.id }}</span>
+            <h3>Nombre: {{ character.name }}</h3>
+            <h3 [ngClass]="{'poder-green-last': isLast}">Poder: {{ character.power }}</h3>
+            <button (click)="deleteCharacter( character.id! )">Eliminar</button>
+            <hr>
+        </li>
+
+    </ul>
+
+</div>
