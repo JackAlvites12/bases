@@ -1,0 +1,5 @@
+<todo-list *ngIf="pendingTodos.length !== 0; else vacio" [todoList]="pendingTodos"></todo-list>
+<ng-template #vacio>
+    <h4>No hay Todos pendientes</h4>
+</ng-template>
+

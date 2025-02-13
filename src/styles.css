@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.sidebar__list{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.sidebar__item{
+    padding: 2px;
+}
+
+.active{
+    background: blue;
+    color: white;
+}
+
+.btn{
+    border: none;
+    padding: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.ct{
+    display: flex;
+    justify-content: space-between;
+}

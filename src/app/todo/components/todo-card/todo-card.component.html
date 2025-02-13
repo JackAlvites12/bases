@@ -1,0 +1,9 @@
+<li (click)="toggleDone( todo.id )">
+    <span>id: {{ todo.id }}</span>
+    <p>Tarea: {{ todo.description }}</p>
+    <div class="ct">
+        <strong>{{ todo.done | toggleNameDone }}</strong> 
+        <button class="btn" (click)="deleteTodo( todo.id )">Eliminar</button>
+    </div>
+    <hr>
+</li>

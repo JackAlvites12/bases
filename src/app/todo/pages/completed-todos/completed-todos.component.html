@@ -1,0 +1,5 @@
+<todo-list *ngIf="completedTodos.length !== 0; else vacio" [todoList]="completedTodos"></todo-list>
+<ng-template #vacio>
+    <h4>No hay Todos completados</h4>
+</ng-template>
+

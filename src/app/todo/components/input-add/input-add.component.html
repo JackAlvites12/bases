@@ -1,0 +1,7 @@
+<form [formGroup]="todoForm" (ngSubmit)="addTodo()">
+    <input 
+        type="text"
+        placeholder="Ingrese una tarea a realizar"
+        formControlName="description"
+    >
+</form>
